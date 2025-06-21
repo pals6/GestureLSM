@@ -144,7 +144,7 @@ from dataloaders.mix_sep import CustomDataset
 from utils.config import parse_args
 
 dataset_args, _ = parse_args("configs/beat2_rvqvae.yaml")
-build_cache = False
+build_cache = True
 
 trainSet = CustomDataset(dataset_args,"train",build_cache = build_cache)
 testSet = CustomDataset(dataset_args,"test",build_cache = build_cache)
