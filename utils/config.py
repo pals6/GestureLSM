@@ -296,7 +296,7 @@ def parse_args(config_path=None):
     parser.add("--vqvae_reverse_decoder_dilation", default=True, type=str2bool)
     parser.add("--vqvae_ckpt",type=str)
     parser.add("--root_weight",default=1.0,type=float)
-    parser.add("--cfg", default="config/vqvae.yaml", type=str)
+    parser.add("--cfg", default="config/beat2_rvqvae.yaml", type=str)
     
     # --------------- render -------------------------- #
     parser.add("--render_video_fps", default=30, type=int)
